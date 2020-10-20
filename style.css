@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,800;0,900;1,400&display=swap');
+
+/* Basic Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  color: #3a3a3a;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 49px;
+}
+
+h2,
+p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+.header {
+  background-color: #3a3a3a;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo {
+  width: 259px;
+  height: 50px;
+}
+
+.article {
+  margin: 0 auto;
+  max-width: 712px;
+}
+
+.article__hero {
+  display: flex;
+  flex-direction: column;
+}
+
+#article__date {
+  font-size: 14px;
+  color: #ccc;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.article__subhead {
+  font-size: 22px;
+}
+
+.article__author {
+  display: flex;
+}
+
+.author--img {
+  width: 42px;
+  height: 42px;
+  margin-right: 15px;
+}
+.author--text-bold {
+  font-size: 14px;
+  color: #3a3a3a;
+  font-weight: bold;
+  line-height: 20px;
+  margin-top: 0;
+}
+
+.author--text-bold span {
+  color: #ccc;
+}
+
+/* article Teaser */
+
+.teaser--caption {
+  font-size: 14px;
+  color: #fff;
+  background-color: #3a3a3a;
+  padding: 15px;
+}
+
+/* Signia img*/
+
+.signia--caption {
+  font-size: 14px;
+  color: #fff;
+  background-color: #3a3a3a;
+  padding: 15px;
+}
+
+/* Article Double Offer */
+
+.article__offer {
+  border: 1px solid #ccc;
+}
+
+.offer--advertorial {
+  font-size: 16px;
+  margin: 5px;
+  text-align: right;
+  color: #ccc;
+}
+
+.offer--img {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.offer--body {
+  line-height: 25px;
+  padding: 20px;
+}
+
+.offer--title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.offer--cta {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #ff7800;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Article Trial */
+
+.article__trial {
+  background-color: #676767;
+  height: 400px;
+}
+
+.trial--caption {
+  color: #fff;
+  background-color: #3a3a3a;
+}
+
+.trial--caption {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.trial--img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Article Form */
+.article__footer {
+  background-color: #f0f0f0;
+  margin: 0 auto;
+}
+
+.article__form {
+  margin: 0 auto;
+  max-width: 712px;
+  padding: 20px 0;
+}
+
+.form--headline {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* .form--list {
+  list-style: none;
+} */
+/* ******************************* */
+.form--list {
+  list-style: none;
+  padding-left: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.form--list li {
+  position: relative;
+  margin-left: 30px;
+  line-height: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.form--list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+  background: red;
+  background: url(images/check.svg);
+  mask-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* ******************************* */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .article {
+    padding: 10px;
+  }
+
+  /* change hero order */
+  .article__teaser {
+    order: 1;
+    margin: 20px 0;
+  }
+
+  .article__title {
+    order: 2;
+  }
+
+  .article__subhead {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    order: 3;
+  }
+
+  .orange-border {
+    background-color: #ff7800;
+    height: 5px;
+    width: 100px;
+    order: 4;
+    margin: 0 auto 20px auto;
+  }
+
+  .article__author {
+    order: 5;
+  }
+
+  .author--text-bold {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .article__author span {
+    display: none;
+  }
+
+  #article__date {
+    order: 6;
+    margin: 0;
+    text-align: center;
+  }
+
+  .author--img {
+    display: none;
+  }
+
+  .article__intro {
+    font-weight: bold;
+  }
+
+  .offer--advertorial {
+    text-align: center;
+  }
+
+  .offer--body {
+    background-color: #3a3a3a;
+  }
+
+  .offer--body p {
+    color: #fff;
+    line-height: 25px;
+  }
+
+  .offer--body p strong {
+    display: none;
+  }
+
+  .trial--img {
+    width: 100%;
+  }
+
+  .article__form {
+    padding: 20px 20px;
+  }
+}
