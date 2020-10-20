@@ -28,10 +28,11 @@ function dynamicDate() {
     m = months[n.getMonth()];
     document.getElementById('article__date').innerHTML = d + ' ' + m + ', ' + y;
   } else {
-    window.addEventListener('resize', function () {});
     m = n.getMonth();
     document.getElementById('article__date').innerHTML = d + '/' + m + '/' + y;
   }
 }
 
 dynamicDate();
+window.addEventListener('resize', dynamicDate);
+//window.onresize=dynamicDate
